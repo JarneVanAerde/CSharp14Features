@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.Conditiona
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.ImplicitLambdaTypes", "CSharp14Features.ImplicitLambdaTypes\CSharp14Features.ImplicitLambdaTypes.csproj", "{0695386C-90A3-476C-82FA-2E1676F233C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.UnboundGenericsNameof", "CSharp14Features.UnboundGenericsNameof\CSharp14Features.UnboundGenericsNameof.csproj", "{D3E71804-6D24-4F0A-AB49-880754C0F89A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{0695386C-90A3-476C-82FA-2E1676F233C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0695386C-90A3-476C-82FA-2E1676F233C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0695386C-90A3-476C-82FA-2E1676F233C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E71804-6D24-4F0A-AB49-880754C0F89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E71804-6D24-4F0A-AB49-880754C0F89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E71804-6D24-4F0A-AB49-880754C0F89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E71804-6D24-4F0A-AB49-880754C0F89A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
