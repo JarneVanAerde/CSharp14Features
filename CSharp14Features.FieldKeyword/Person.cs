@@ -1,5 +1,6 @@
 namespace CSharp14Features.FieldKeyword;
 
+// This new 'field' keyword will introduce a breaking change
 public class Person
 {
     public int Age

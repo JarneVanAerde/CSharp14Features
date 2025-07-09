@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.UnboundGen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.FieldKeyword", "CSharp14Features.FieldKeyword\CSharp14Features.FieldKeyword.csproj", "{3583C6BE-DE9B-4D0A-B5E7-5A45797207CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.ExtensionMembers", "CSharp14Features.ExtensionMembers\CSharp14Features.ExtensionMembers.csproj", "{96DD8AD7-895A-468F-BF84-3FA51E2BAE41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{3583C6BE-DE9B-4D0A-B5E7-5A45797207CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3583C6BE-DE9B-4D0A-B5E7-5A45797207CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3583C6BE-DE9B-4D0A-B5E7-5A45797207CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96DD8AD7-895A-468F-BF84-3FA51E2BAE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96DD8AD7-895A-468F-BF84-3FA51E2BAE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96DD8AD7-895A-468F-BF84-3FA51E2BAE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96DD8AD7-895A-468F-BF84-3FA51E2BAE41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
