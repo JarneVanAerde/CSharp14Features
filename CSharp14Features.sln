@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.ExtensionM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManager", "WarehouseManager\WarehouseManager.csproj", "{326386D6-5A36-4253-885E-3BAEDA21DF87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefinedCompoundOperators", "UserDefinedCompoundOperators\UserDefinedCompoundOperators.csproj", "{F5104552-961E-4479-B706-5BED96A9F787}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.UserDefinedCompoundOperators", "UserDefinedCompoundOperators\CSharp14Features.UserDefinedCompoundOperators.csproj", "{F5104552-961E-4479-B706-5BED96A9F787}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿namespace UserDefinedCompoundOperators;
+﻿namespace CSharp14Features.UserDefinedCompoundOperators;
 
 public class Channel
 {
