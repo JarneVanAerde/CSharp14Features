@@ -1,15 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using WarehouseManager.Data;
 using WarehouseManager.Services;
-using WarehouseManager.Utils;
 
 var options = new DbContextOptionsBuilder<WarehouseContext>()
     .UseInMemoryDatabase("WarehouseDB")
     .Options;
 
-using var ctx = new WarehouseContext(options);
-var svc = new WarehouseService(ctx);
-var ui = new ConsoleUI(svc);
+using var dbContext = new WarehouseContext(options);
+var warehouseService = new WarehouseService(dbContext);
+await WarehouseSeeder.Seed(dbContext);
 
-ui.Run();
+var warehouses = warehouseService.GetAll();
+foreach (var warehouse in warehouses)
+{
+    Console.WriteLine($"ID: {warehouse.Id}, Name: {warehouse.Name}, Quantity: {warehouse.Quantity}, Location: {warehouse.Location}");
+}
