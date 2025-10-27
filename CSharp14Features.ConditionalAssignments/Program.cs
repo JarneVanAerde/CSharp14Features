@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using CSharp14Features.ConditionalAssignments;
+﻿using CSharp14Features.ConditionalAssignments;
 
 var personRepository = new PersonRepository();
 var person = personRepository.GetPerson(123);

@@ -1,5 +1,3 @@
-using System.Numerics;
-
 namespace CSharp14Features.ExtensionMembers;
 
 public static class EnumerableExtensions

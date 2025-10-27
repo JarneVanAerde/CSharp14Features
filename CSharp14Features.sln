@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.ConditionalAssignments", "CSharp14Features.ConditionalAssignments\CSharp14Features.ConditionalAssignments.csproj", "{3301476B-8156-498B-8C85-24D70FE6D5A3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.ImplicitLambdaTypes", "CSharp14Features.ImplicitLambdaTypes\CSharp14Features.ImplicitLambdaTypes.csproj", "{0695386C-90A3-476C-82FA-2E1676F233C7}"
@@ -9,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.FieldKeyword", "CSharp14Features.FieldKeyword\CSharp14Features.FieldKeyword.csproj", "{3583C6BE-DE9B-4D0A-B5E7-5A45797207CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp14Features.ExtensionMembers", "CSharp14Features.ExtensionMembers\CSharp14Features.ExtensionMembers.csproj", "{96DD8AD7-895A-468F-BF84-3FA51E2BAE41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManager", "WarehouseManager\WarehouseManager.csproj", "{326386D6-5A36-4253-885E-3BAEDA21DF87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefinedCompoundOperators", "UserDefinedCompoundOperators\UserDefinedCompoundOperators.csproj", "{F5104552-961E-4479-B706-5BED96A9F787}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +43,19 @@ Global
 		{96DD8AD7-895A-468F-BF84-3FA51E2BAE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96DD8AD7-895A-468F-BF84-3FA51E2BAE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96DD8AD7-895A-468F-BF84-3FA51E2BAE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326386D6-5A36-4253-885E-3BAEDA21DF87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326386D6-5A36-4253-885E-3BAEDA21DF87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326386D6-5A36-4253-885E-3BAEDA21DF87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326386D6-5A36-4253-885E-3BAEDA21DF87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5104552-961E-4479-B706-5BED96A9F787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5104552-961E-4479-B706-5BED96A9F787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5104552-961E-4479-B706-5BED96A9F787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5104552-961E-4479-B706-5BED96A9F787}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3A940C5-59F1-4C6A-B5BA-60B1552DB69F}
 	EndGlobalSection
 EndGlobal
