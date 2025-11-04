@@ -4,6 +4,7 @@ using WarehouseManager.Models;
 
 namespace WarehouseManager.Services;
 
+// TODO: Remove, might not be needed
 public class WarehouseService
 {
     private readonly WarehouseContext _context;

@@ -1,8 +1,7 @@
 ﻿namespace WarehouseManager.Models;
 
-public class Warehouse
+public class Warehouse : Entity
 {
-    public int Id { get; set; }
     public required string Name { get; set; }
 
     // TODO: Use ++ compound operator to showcase that warehouse++ is valid in C# 14 and can increase the quantity by 1
