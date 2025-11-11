@@ -6,7 +6,6 @@ public static class WarehouseQuantityParser
 
     public static bool TryParseQuantity(string input, out int quantity)
     {
-        // TODO: show off the implicit lambda types feature
         TryParse<int> parse = (string text, out int result) =>
         {
             text = text.Trim();

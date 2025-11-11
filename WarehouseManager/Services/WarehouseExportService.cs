@@ -2,7 +2,6 @@
 
 namespace WarehouseManager.Services;
 
-// TODO: show off unbound generics by making this class generic
 public class WarehouseExportService
 {
     public static readonly string ListFormat = nameof(List<Warehouse>);
