@@ -29,7 +29,9 @@ if (WarehouseQuantityParser.TryParseQuantity(input!, out var parsedQuantity))
 
 dbContext.SaveChanges();
 
-foreach (var warehouse in dbContext.Warehouses)
+var warehouseExportService = new WarehouseExportService();
+var exportedData = warehouseExportService.ExportData(WarehouseExportService.HashSetFormat, allWarehouses);
+foreach (var warehouse in exportedData)
 {
     Console.WriteLine($"ID: {warehouse.Id}, Name: {warehouse.Name}, Quantity: {warehouse.Quantity}, Location: {warehouse.Location}");
 }

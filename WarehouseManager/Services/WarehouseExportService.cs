@@ -5,19 +5,16 @@ namespace WarehouseManager.Services;
 // TODO: show off unbound generics by making this class generic
 public class WarehouseExportService
 {
-    public static readonly List<string> SupportedFormats =
-    [
-        $"Supports {nameof(List<Warehouse>)} for all warehouses",
-        $"Supports {nameof(HashSet<Warehouse>)} for unique warehouses",
-    ];
+    public static readonly string ListFormat = nameof(List<Warehouse>);
+    public static readonly string HashSetFormat = nameof(HashSet<Warehouse>);
 
-    public ICollection<Warehouse> ExportData(string type, ICollection<Warehouse> warehouses)
+    public ICollection<Warehouse> ExportData(string format, ICollection<Warehouse> warehouses)
     {
-        return type switch
+        return format switch
         {
             nameof(List<Warehouse>) => ExportListData(warehouses),
             nameof(HashSet<Warehouse>) => ExportHashSetData(warehouses),
-            _ => throw new NotSupportedException($"The collection type '{type}' is not supported for export.")
+            _ => throw new NotSupportedException($"The format '{format}' is not supported for export.")
         };
     }
 
