@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WarehouseManager.Data;
+using WarehouseManager.Extensions;
 using WarehouseManager.Services;
 
 var options = new DbContextOptionsBuilder<WarehouseContext>()
@@ -9,14 +10,18 @@ var options = new DbContextOptionsBuilder<WarehouseContext>()
 using var dbContext = new WarehouseContext(options);
 await WarehouseSeeder.Seed(dbContext);
 
+var allWarehouses = await dbContext.Warehouses.ToListAsync();
+allWarehouses.CleanWarehouses();
+dbContext.SaveChanges();
+
 var warehouseToUpdate = await dbContext.Warehouses.FindAsync(1);
 
 Console.Write("Enter new quantity for Warehouse with Id 1: ");
 var input = Console.ReadLine();
 
-if (warehouseToUpdate != null)
+if (WarehouseQuantityParser.TryParseQuantity(input!, out var parsedQuantity))
 {
-    if (WarehouseQuantityParser.TryParseQuantity(input!, out var parsedQuantity))
+    if (warehouseToUpdate != null)
     {
         warehouseToUpdate.Quantity = parsedQuantity;
     }
